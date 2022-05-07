@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="content">
+    <h3 class="header">Hey! I'm <span class="autotype"></span> </h3>
+    <a class="readmore-url" href="readmore.html"><p class="readmore">> Read more</p></a>
+</div>
+</body>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    .header{
+        color: White;
+        font-family: 'Comfortaa', cursive;
+        text-shadow: 0 0 50px black;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+
+    .readmore{
+        color: White;
+        font-family: 'Comfortaa', cursive;
+        text-shadow: 0 0 50px black;
+        margin-left: 70px;
+        font-size: 20px;
+        text-underline: black;
+    }
+
+    body {
+        width: 100%;
+        min-width: 1000px;
+        /*height: auto;*/
+        /*!*overflow: hidden;*! 07/04/2022 - JOSEPH HOSTEN*/
+        background: hsla(0, 5%, 5%, 1) url("https://files.seailz.com/websites/landing/assests/background/city.gif") no-repeat fixed center;
+        background-size: cover;
+        /*background: #39393B;*/
+        font-family: "Saira Semi Condensed", sans-serif;
+        font-size: 70px;
+        padding-top: 35px;
+    }
+</style>
+
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    const typed = new Typed(".autotype", {
+        strings: ["seailz", "seailz", "seailz", "a Java Developer", "a HTML Developer", "a CSS Developer", "a JavaScript Developer"],
+        typeSpeed: 45,
+        backSpeed: 30,
+        smartBackspace: true,
+        loop: true
+    })
+
+    function readMore() {
+        window.location.replace("readmore.html");
+    }
+</script>
+</html>
